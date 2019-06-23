@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ngx-datatable class="material" [rows]="rows" [limit]="pageSize" [sorts]="sortOption" [columnMode]="'force'"
+[headerHeight]="50"
+[footerHeight]="50"
+[rowHeight]="50"
+[count]="totalCount" [offset]="currentPageNum" (sort)="onSort($event)" (page)="onPage($event)" [externalPaging]="true">
+<ngx-datatable-column name="" prop="id"></ngx-datatable-column>
+<ngx-datatable-column prop="account_executive" name="Account Executive"></ngx-datatable-column>
+<ngx-datatable-column prop="daily_turnover" name="Daily Turnover"></ngx-datatable-column>
+<ngx-datatable-column prop="accumulated_turnover" name="Accumulated Turnover"></ngx-datatable-column>
+</ngx-datatable>
+
